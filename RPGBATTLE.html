@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="RPGBATTLE.js" async></script>
+        
+        <style type="text/css">
+        body{background-image: url('https://cdn.discordapp.com/attachments/777530932617936947/913696693780885504/environment_forest_evening.png');
+        background-repeat: no-repeat;
+        background-size: auto;}
+
+        
+        
+		    div.objectif {
+                display: flex;
+        color: whitesmoke;  
+        background: rgb(38, 118, 143);
+        width: 150px;
+        border: 10px outset cornsilk;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        height: 150px;
+        align-content: stretch;
+        justify-content: center;
+        flex-direction: column;
+        position:relative;
+        left: 340px;
+        top: -5px;
+        }
+
+        #attack:hover{
+            color:rgb(38, 118, 143);
+        }
+        #defendre:hover{
+            color:rgb(38, 118, 143);
+        }
+        #spéciale:hover{
+            color:rgb(38, 118, 143);
+        }
+
+        
+        div.Instructions {
+        display: flex;
+        color: white;  
+        background: rgb(38, 118, 143);
+        width: 100px;
+        border: 10px outset cornsilk;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        
+        flex-direction:flex-end ;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: absolute;
+        top: 600px;
+        left: 490px}
+
+        .Noms {
+        display: flex;
+        color: whitesmoke;  
+        background: rgb(38, 118, 143);
+        width: 300px;
+        border: 10px outset cornsilk;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+        top: 550px;
+        left: 650px;
+        flex-wrap: wrap;
+        font-size: 21px;
+        font-weight: bold;
+        }
+       
+        #statsheros4{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+        .Heros_4{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 880px;
+            top: 50px;
+        }
+
+        .Heros_4:hover #statsheros4{
+            visibility: visible;
+        }
+
+
+        #statsheros1{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+        .Heros_1{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 750px;
+            top: 40px;
+        }
+
+        .Heros_1:hover #statsheros1{
+            visibility: visible;
+        }
+        #statsheros3{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+        
+        .Heros_3{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 760px;
+            top: 10px;
+        }
+
+        .Heros_3:hover #statsheros3{
+            visibility: visible;}
+
+            #statsheros2{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+
+        .Heros_2{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 600px;
+            top: -100px;
+        }
+
+        .Heros_2:hover #statsheros2{
+            visibility: visible;}
+        div.personnages {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+
+        #statsmonstre1{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+        .Monstre_1{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 150px;
+            top: -150px;
+        }
+
+        .Monstre_1:hover #statsmonstre1{
+            visibility: visible;
+        }
+    
+
+        
+        #statsmonstre2{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+        .Monstre_2{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 50px;
+            top: -100px;
+        }
+
+        .Monstre_2:hover #statsmonstre2{
+            visibility: visible;
+        }        
+
+         
+        #statsmonstre3{
+            display: flex;
+            position: absolute;
+            left: auto;
+            top: auto;
+            color: whitesmoke;
+            padding: auto;
+            width: auto ;
+            height: auto;
+            margin: auto;
+            border:5px outset cornsilk;
+            background-color: rgb(38, 118, 143);
+            visibility: hidden;
+        }
+        .Monstre_3{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 50px;
+            top: -420px;
+        }
+
+        .Monstre_3:hover #statsmonstre3{
+            visibility: visible;
+        }    
+           
+
+
+
+        
+            </style> 
+    </head>
+        <body>
+            
+         
+            <!-- BOITE DIALOGUE -->
+            <div class="objectif" id = "dialogue">
+            <p>Le combat commence !</p>
+
+            </div>
+
+            <!-- BOITE INSTRUCTIONS -->
+            <div class="Instructions">
+            <button id="attack">Attaquer</button> 
+            <button id="defendre">Défendre</button>
+            <button id="speciale">Spéciale</button>
+            </div> 
+
+            <!-- BOITE HEROS -->
+            <div class="Noms"> 
+            <div><p>Igor</p><p>mana</p><p id = "manaIgor">100</p></div>
+            <div><p>Franky</p><p>mana</p><p id = "manaFranky">100</p></div>
+            <div><p>Koma</p><p>mana</p><p id = "manaKoma">100</p></div>
+            <div><p>Hylo</p><p>mana</p><p id = "manaHylo">100</p></div>
+            </div>
+
+            <!-- GESTION PERSONNAGES -->
+            <div class="Personnages">
+                <div class="Heros_1">
+                    <img src="Igor.png" id = "imageIgor">
+                    <span id="statsheros1">Igor PV:
+                        <p id="pvIgor">75</p>
+                    </span>
+                </div>
+                <div class="Heros_4">
+                    <img src="Franky.png" id = "imageFranky">
+                    <span id="statsheros4">Franky PV :
+                        <p id="pvFranky">60</p>
+                    </span>
+                </div>
+                <div class="Heros_3">
+                    <img src="Koma.png " id = "imageKoma">
+                    <span id="statsheros3">Koma PV :
+                        <p id="pvKoma">45</p>
+                    </span>
+                </div>
+                <div class="Heros_2">
+                    <img src="Hylo.png" id = "imageHylo">
+                    <span id="statsheros2">Hylo PV:
+                        <p id="pvHylo">50</p>
+                    </span>
+                </div>
+
+                </div>
+                <div class="Monstre_1">
+                <img src="MONSTRE 1.jpg" id = "imageMonstre1">
+               <span id="statsmonstre1">MONSTRE 1 PV:
+                        <p id="pvMonstre1">100</p>
+                    </span>
+                </div>  
+                </div>
+                <div class="Monstre_2">
+                <img src="MONSTRE 2.jpg" id = "imageMonstre2">
+                <span id="statsmonstre2">MONSTRE 2 PV:
+                        <p id="pvMonstre2">120</p>
+                    </span>
+                </div>   
+                <div class="Monstre_3">
+                    <img src="MONSTRE 3.png" id = "imageMonstre3">
+                    <span id="statsmonstre3">MONSTRE 3 PV:
+                            <p id="pvMonstre3">110</p>
+                        </span>
+                    </div>
+            </div>
+
+        
+    
+</body></html>
